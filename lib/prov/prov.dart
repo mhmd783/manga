@@ -244,10 +244,10 @@ class control extends ChangeNotifier {
     dropdownItemsGoal = [
       languagebox.get("language") == "en"
           ? "Increase followers number "
-          : "زياده عدد المتابعين",
+          : "ذياده عدد المتابعين",
       languagebox.get("language") == "en"
           ? "Increase interaction"
-          : "زياده التفاعل",
+          : "ذياده التفاعل",
       languagebox.get("language") == "en"
           ? "Receive more messages"
           : "تلقي المزيد من الرسائل",

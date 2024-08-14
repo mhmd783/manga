@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:mango/prov/prov.dart';
+import 'package:mango/view/FirstHome.dart';
 import 'package:mango/view/home.dart';
 import 'package:mango/view/notification.dart';
 import 'package:mango/view/offers.dart';
@@ -94,17 +95,18 @@ class MyApp extends StatelessWidget {
             "newpass3": (context) => NewPass3(),
             "messagenewpass3": (context) => MessageNewPass3(),
             "vote": (context) => Vote(),
-            "home": (context) => Home(),
+            "home": (context) => FirstHome(),
+            "home1": (context) => Home(),
             "profile": (context) => Profile(),
             "notification": (context) => NotificationApp(),
             "offers": (context) => Offers(),
             "suport": (context) => Suport()
           },
-          //  home: NewPass3(),
+          //home: FirstHome(),
           home:
               statusbox.get("status") == null || statusbox.get("status") == "0"
                   ? Language()
-                  : Home(),
+                  : FirstHome(),
         ));
   }
 }

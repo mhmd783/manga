@@ -7,6 +7,7 @@ import 'package:mango/companent/container_chose_platform.dart';
 import 'package:mango/companent/drop_dowen_button.dart';
 import 'package:mango/companent/text_field_vote.dart';
 import 'package:mango/prov/prov.dart';
+import 'package:mango/view/profile/dialog_details_order.dart';
 import 'package:mango/view/profile/dialog_profile.dart';
 import 'package:provider/provider.dart';
 
@@ -22,6 +23,7 @@ class _Profile1 extends State<Profile1> {
   GlobalKey<FormState> formstate = GlobalKey();
   late Box tokenbox = Hive.box('token');
   DialogProfile dialogProfile = new DialogProfile();
+  DialogOrders dialogOrders=new DialogOrders();
   @override
   Widget build(BuildContext context) {
     return Consumer<control>(builder: (context, val, child) {
@@ -69,7 +71,7 @@ class _Profile1 extends State<Profile1> {
                         ),
                         child: PlatForm(
                             text: val.languagebox.get("language") == "en"
-                                ? "Realse"
+                                ? "Reelse"
                                 : "ريلز",
                             image: "assets/images/realsprofile.png",
                             color: colorApp.colorinstgram),
@@ -134,6 +136,10 @@ class _Profile1 extends State<Profile1> {
                         ],
                       ),
                       child: ListTile(
+                        onTap: (){
+                          val.body_profile == "campaign"
+                              ?dialogOrders.DetailsOrderCampaign(context, i):dialogOrders.DetailsOrderReels(context, i);
+                        },
                         leading: Container(
                             margin: EdgeInsets.only(left: 10),
                             height: 30,

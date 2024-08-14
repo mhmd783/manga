@@ -135,7 +135,7 @@ class _Notifiction1 extends State<Notifiction1> {
                                             fontSize: 14),
                                       ),
                                       subtitle: Text(
-                                        "${Jiffy.parse(val.notification['data'][i]['created_at']).yMd} ", //.. ${Jiffy.parse(val.notification['data'][i]['created_at']).jm}
+                                        "${Jiffy.parse(val.notification['data'][i]['created_at']).yMd} .. ${Jiffy.parse(val.notification['data'][i]['created_at']).jm}", //
                                         style: TextStyle(
                                             color: Colors.grey, fontSize: 13),
                                       ),

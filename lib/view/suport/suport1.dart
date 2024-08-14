@@ -18,7 +18,7 @@ class Suport1 extends StatefulWidget {
 class _Suport1 extends State<Suport1> {
   DialogApp dialoge = new DialogApp();
   GlobalKey<FormState> formstate = GlobalKey();
-  String phone_admin = "+972 56-601-3123";
+  String phone_admin = "+970569978586";
   @override
   Widget build(BuildContext context) {
     return Consumer<control>(builder: (context, val, child) {

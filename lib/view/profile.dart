@@ -234,8 +234,8 @@ class _Profile extends State<Profile> {
                                                         ['latest_subscription']
                                                     ['status_campaign'] ==
                                                 "true"
-                                            ? "الفديوهات: ${val.data_client_profile["data"]['latest_subscription']['num_of_reels']}    الحملات : بلا حدود"
-                                            : "الفديوهات: ${val.data_client_profile["data"]['latest_subscription']['num_of_reels']}    الحملات: "),
+                                            ? "الفيديوهات: ${val.data_client_profile["data"]['latest_subscription']['num_of_reels']}    الحملات : بلا حدود"
+                                            : "الفيديوهات: ${val.data_client_profile["data"]['latest_subscription']['num_of_reels']}    الحملات: "),
 
                                     //val.languagebox.get("language") == "en"?//${val.data_client_profile["data"]['latest_subscription']['status_campaign']=="true"?
 

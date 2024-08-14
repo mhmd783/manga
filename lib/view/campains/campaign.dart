@@ -74,7 +74,6 @@ class _Campaign extends State<Campaign> {
                     child: MaterialButton(
                       padding: EdgeInsets.all(5),
                       onPressed: () {
-                        
                         val.ChoseTypeCampain("facebook&instgram");
                       },
                       child: Container(
@@ -143,7 +142,7 @@ class _Campaign extends State<Campaign> {
                         ),
                         child: PlatForm(
                             text: val.languagebox.get("language") == "en"
-                                ? "instgram"
+                                ? "instagram"
                                 : "انستجرام",
                             image: "assets/images/instgram.png",
                             color: colorApp.colorinstgram),

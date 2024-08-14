@@ -1000,7 +1000,7 @@ class DialogProfile {
                           style: TextStyle(fontSize: 13),
                           val.languagebox.get("language") == "en"
                               ? "number vedio"
-                              : "عدد فديوهات"),
+                              : "عدد فيديوهات"),
                     ),
                     ListTile(
                       title: Text(
